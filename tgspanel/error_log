@@ -1,0 +1,6 @@
+[24-Nov-2015 15:25:55 Asia/Jakarta] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/tokobung/public_html/tgspanel/index.php on line 11
+[24-Nov-2015 15:25:55 Asia/Jakarta] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/tokobung/public_html/tgspanel/index.php on line 11
+[24-Nov-2015 15:25:55 Asia/Jakarta] PHP Warning:  mysql_real_escape_string(): Access denied for user 'root'@'localhost' (using password: NO) in /home/tokobung/public_html/tgspanel/index.php on line 12
+[24-Nov-2015 15:25:55 Asia/Jakarta] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/tokobung/public_html/tgspanel/index.php on line 12
+[24-Nov-2015 15:25:55 Asia/Jakarta] PHP Notice:  Undefined variable: data in /home/tokobung/public_html/tgspanel/__class/db.php on line 41
+[24-Nov-2015 15:27:20 Asia/Jakarta] PHP Notice:  Undefined variable: data in /home/tokobung/public_html/tgspanel/__class/db.php on line 41

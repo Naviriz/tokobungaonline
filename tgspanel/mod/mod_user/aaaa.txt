@@ -1,0 +1,46 @@
+<div class="span6">
+		  <div class="widget widget-table action-table">
+            <div class="widget-header"> <i class="icon-th-list"></i>
+              <h3>Master Level</h3>
+			  <i class="icon-plus-sign" style="float:right; margin:10px 10px 0 0"> <a href="" onClick="window.open('action/actionLevel.php?action=add','scrollwindow','top=100,left=350,width=550,height=250');" size="10">Add Level</a></i>
+            </div>
+            <!-- /widget-header -->
+            <div class="widget-content">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <th> No </th>
+                    <th> Nama Level </th>
+                    <th class="td-actions"> </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
+					//user data
+					$level = "level";
+					$fildLevel = "*";
+					$no = 1;
+					foreach($dbase->tampil($level, $fildLevel) as $level){
+				  ?>
+					<tr>
+						<td> <?php echo $no++; ?> </td>
+						<td> <?php echo $level['levelName']; ?> </td>
+						<td class="td-actions">
+							<!--tombol edit-->
+							<a href="#" onClick="window.open('action/actionLevel.php?action=update&id=<?php echo $level['levelId']; ?>','scrollwindow','top=100,left=350,width=550,height=250');" size="10" class="btn btn-small btn-success"><i class="btn-icon-only icon-ok"> </i></a>
+							
+							<!--tombol delete-->
+							<a href="action/actionLevel.php?action=delete&id=<?php echo $level['levelId']; ?>" onclick="return confirm('Apakah yakin ingin dihapus?')" class="btn btn-danger btn-small"><i class="btn-icon-only icon-remove"> </i></a>
+						</td>
+					</tr>
+				  <?php
+					}
+				  ?>
+                
+                </tbody>
+              </table>
+            </div>
+            <!-- /widget-content --> 
+          </div>
+          <!-- /widget --> 
+		</div>
